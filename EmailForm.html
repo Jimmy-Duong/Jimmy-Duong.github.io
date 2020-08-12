@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Software Development</title>
+  <title>Contact Information</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,10 +35,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-         <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id ="navbarDropdown" role ="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
               <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="dreamgoal.html">Future Endeavors</a>
+            <a class="dropdown-item" href="dreamgoal.html">Dream Goal</a>
             <a class="dropdown-item" href="model.html">Model
               <span class="sr-only">(current)</span>
             </a>
@@ -62,48 +62,47 @@
       </div>
     </div>
   </nav>
-  
+
   <!-- Header -->
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Petri Net</h1>
-         <p class="text-white-50">A remake of a Petri Net Simulation to find resultant of the Petri Net</p>
-         <p class="text-white-50">SE-306 - Formal Methods written in Java with the collaboration of Anthony Vives and Michael Karolewicz</p>
-            <p class="text-white-50">
-              <a href="https://github.com/anthonydvives/petri-net">Petri Net Repository</a>
-            </p>
-          <a href="#screenshotsPetriNet" class="btn btn-primary js-scroll-trigger">Take a Look</a>
+      <div class="mx-auto text-left">
+        <h2 class="text-white-50 my-0 text-uppercase">Contact Form</h2>
+        <section class="contact-section">
+    <div class="container">
+
+      <div class="row">
+
+        
+        <form class="form" action="mail.php" method="POST">
+          <p class="name">
+              <input type="text" name="name" id="name" placeholder="Jimmy Duong"/>
+              <label for="name">Name</label>
+          </p>
+          
+          <p class="email">
+              <input type="text" name="email" id="email" placeholder="mail@example.com"/>
+              <label for="email">Email</label>
+          </p>
+
+          <p class="text">
+            <textarea name="message" placeholder=""></textarea>
+          </p>
+
+          <p class="submit">
+            <input type="submit" value="Send"><input type="reset" value="Clear">
+          </p>
+
+
+        </form>
+
+      </div>
+    </div>
+  </section>
       </div>
     </div>
   </header>
-<!-- Projects Section -->
-  <section id="screenshotsPetriNet" class="projects-section bg-dark">
-    <div class="container">
 
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="column align-items-center no-gutters mb-4 mb-lg-5">
-        <img class="img-fluid mb-3 mb-lg-0" src="img/table_selection.png" alt="">
-      </div>
-      <div class="column align-items-center no-gutters mb-4 mb-lg-5">
-        <img class="img-fluid mb-3 mb-lg-0" src="img/inputs_and_outputs.png" alt="">
-      </div>
-      <div class="column align-items-center no-gutters mb-4 mb-lg-5">
-        <img class="img-fluid mb-3 mb-lg-0" src="img/inputed_numbers.png" alt="">
-      </div>
-      <div class="column align-items-center no-gutters mb-4 mb-lg-5">
-        <img class="img-fluid mb-3 mb-lg-0" src="img/save_to_text_file.png" alt="">
-      </div>
-    </div>
-      <h4 class="text-white-50">The Final Resultant Below</h4>
-      <h4 class="text-white-50">{ 2  2  1  0 }</h4>
-      <h4 class="text-white-50">{ 1  2  1  0 }</h4>
-      <h4 class="text-white-50">{ 2  2  w  0 }</h4>
-      <h4 class="text-white-50">{ 1  2  w  0 }</h4>
-      <!--object data="output.txt"></object-->
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
